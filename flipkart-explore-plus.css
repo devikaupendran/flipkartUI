@@ -1,0 +1,592 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f1f2f4;
+}
+                    /* -----------------------------------------nav bar section ----------------------------------------- */
+nav{
+    width:100%;
+    background-color: #fff;
+    height:70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top:0;
+}
+.logo{
+    margin-left: 50px;
+    cursor: pointer;
+}
+.search-bar{
+    width:50%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-bar input{
+    width:100%;
+    height:40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f5ff;
+    padding :4px;
+}
+.search-bar input::placeholder{
+    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+    font-size: 17.5px;
+    text-indent: 6%;
+    word-spacing: 4px;
+}
+.search-bar input[type="text"]{
+    text-indent: 6%;
+}
+.search-bar i{
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    margin-left:10px;
+    font-size: 19px;
+    color: #4c4b4bb1;
+}
+.login-icon , .cart-icon , .seller-icon {
+    cursor: pointer;
+}
+
+.login-icon i, .cart-icon i, .seller-icon i{
+    margin-right: 9px;
+    font-size: 16px;
+}
+.login-icon span, .cart-icon span, .seller-icon span{
+    font-size: 16px;
+    color:#3d3d3d;
+}
+.login-icon:hover,.login-icon span:hover{
+    width:max-content;
+    height:40px;
+    border-radius: 10px;
+    background-color: #2a55e5;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 9px;
+}
+
+.login-icon span{
+    margin-right:9px;
+}
+.dots3{
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+                    /* -----------------------------------------header section ----------------------------------------- */
+
+header{
+    width:98%;
+    height:140px;
+    background-color: #fff;
+    margin:0 13px;
+}
+.header-wrapper{
+    margin: auto;
+    width: 82%;
+    height:140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.h-img1{
+    display: flex;
+    flex-direction: column;
+}
+.header-wrapper p{
+    font-size: 13px;
+    text-align: center;
+}
+.header-wrapper img{
+    width:90px;
+    height:90px;
+    cursor: pointer;
+}
+
+
+                    /* -----------------------------------------image slider section ----------------------------------------- */
+
+.slider{
+    position: relative;
+    width:98%;
+    margin:0 13px;
+    overflow:hidden;
+    cursor: pointer;
+}
+.slider img{
+    width:100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+}
+.slider button{
+    position: absolute;
+    top:30%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width:33px;
+    height:80px;
+    outline: none;
+    border: none;
+}
+.next{
+    right:0;
+}
+.prev{
+    left:0;
+}
+                    /* ----------------------------------------- mobile product section ----------------------------------------- */
+
+.mobile-product{
+    width:98%;
+    height:380px;
+    background-color: #fff;
+    margin:0 13px;
+    display: grid;
+    grid-template-rows: 0.3fr 2fr;
+}
+.mobile-heading{
+    margin: 20px;
+    cursor: pointer;
+}
+.mobile-list{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.mobile{
+    width:210px;
+    height:280px;
+    margin-top: 10px;
+    border:1px solid #c0bdbd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mobile img{
+    width:200px;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+.mobile p{
+    line-height: 2;
+    font-size: 15px;
+}
+.mobile img:hover{
+    transform: scale(1.1);
+    
+}
+p .text2{
+    font-size: 700;
+}
+                    /* ----------------------------------------- Product section 1----------------------------------------- */
+
+.appliance-container{
+    width:98%;
+    height:310px;
+    margin:0 13px;
+    background-color: #fff;
+}
+.ap-heading{
+    width:100%;
+    height:60px;
+    /* background-color: yellow; */
+}
+.ap-heading h3{
+    padding:20px;
+}
+.ap-list{
+    padding:0 15px;
+    width:100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appliances p,.appliances1 p{
+    margin-top: 13px;
+    font-size: 14px;
+}
+.appliances span,.appliances1 span{
+    font-weight: 600;
+}
+.appliances img{
+    width:150px;
+    height:120px;
+    margin: 15px 10px;
+    transition: 0.4s ease-out;
+}
+.appliances img:hover,.appliances1 img:hover{
+    transform: scale(1.1);
+}
+.appliances,.appliances1{
+    border:0.5px solid #a5a5a5;
+    border-radius: 5px;
+    padding:6px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.7;
+}
+.appliance-container1{
+    width:98%;
+    height:350px;
+    margin:0 13px;
+    background-color: #fff;
+}
+.appliances1 img{
+    width:160px;
+    height:180px;
+    margin: 6px 10px;
+    transition: 0.4s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    /* -----------------------------------------All advertisement section ----------------------------------------- */
+.advertisement{
+    width:98%;
+    background-color: #fff;
+    margin:0 13px;
+}
+.advertisement1, .advertisement2, .advertisement3,.advertisement4, .advertisement5,.advertisement6{
+    width: 100%;
+    height:270px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 10px;
+    cursor: pointer;
+}
+.advertisement1 div, .advertisement2 div, .advertisement3 div, .advertisement4 div, .advertisement5 div, .advertisement6 div{
+    background-size: cover;
+}
+.ad1-item1{ background-image: url("./advertisement/ad1.png");}
+.ad1-item2{ background-image: url("./advertisement/ad2.png");}
+.ad1-item3{ background-image: url("./advertisement/ad3.png");}
+
+.ad2-item1{ background-image: url("./advertisement/ad4.png");}
+.ad2-item2{ background-image: url("./advertisement/ad5.png");}
+.ad2-item3{ background-image: url("./advertisement/ad6.png");}
+
+.ad3-item1{ background-image: url("./advertisement/ad7.png");}
+.ad3-item2{ background-image: url("./advertisement/ad8.png");}
+.ad3-item3{ background-image: url("./advertisement/ad9.png");}
+
+.ad4-item1{ background-image: url("./advertisement/ad10.png");}
+.ad4-item2{ background-image: url("./advertisement/ad11.png");}
+.ad4-item3{ background-image: url("./advertisement/ad12.png");}
+
+.ad5-item1{ background-image: url("./advertisement/ad13.jpg");}
+.ad5-item2{ background-image: url("./advertisement/ad14.jpg");}
+.ad5-item3{ background-image: url("./advertisement/ad15.jpg");}
+.ad6-item1{ background-image: url("./advertisement/ad16.jpg");}
+.ad6-item2{ background-image: url("./advertisement/ad17.jpg");}
+.ad6-item3{ background-image: url("./advertisement/ad18.jpg");}
+
+                    /* ----------------------------------------- Major  product section  ----------------------------------------- */
+.gadget-section{
+    width: 98%;
+    height:660px;
+    margin: 0 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.container1, .container2{
+    padding: 0 10px;
+}
+.container1{
+    width :32%;
+    height:660px;
+    background-color: #fff;
+}
+ .header{
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.header h2{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.content1, .content2{
+    width:100%;
+    height: 295px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+/* ----------------container1 ------------------ */
+.container1 .content1-img1{
+    width: 48%;
+    height:270px;
+}
+.container1 .content1-img2{
+    width: 48%;
+    height:270px;
+}
+.container1 .content2-img1{
+    width: 48%;
+    height:270px;
+}
+.container1 .content2-img2{
+    width: 48%;
+    height:270px;
+}
+.content1-img1,.content1-img2,.content2-img1,.content2-img2{
+    border: 1px solid #b8b3b3;
+    margin:10px;
+}
+.container1 img{
+    width:100%;
+    height:200px;
+    padding:5px;
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+.container1 img:hover{
+    transform: scale(1.1);
+}
+
+/* ----------------container2 ------------------ */
+.container2{
+    width :32%;
+    height:660px;
+    background-color: #fff;
+}
+.content1-img1 h3, .content1-img2 h3, .content2-img1 h3, .content2-img2 h3{
+    color:green;
+}
+.content1-img1, .content1-img2, .content2-img1, .content2-img2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .content1-img1{
+    width: 50%;
+    height:270px;
+}
+.container2 .content1-img2{
+    width: 50%;
+    height:270px;
+}
+.container2 .content2-img1{
+    width: 50%;
+    height:270px;
+}
+.container2 .content2-img2{
+    width: 50%;
+    height:270px;
+}
+.container2 img{
+    width:100%;
+    height:200px;
+    padding:15px;
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+.container2 img:hover{
+    transform: scale(1.1);
+}
+/* ----------------container 3 ------------------ */
+
+.container3{
+    width :32%;
+    height:660px;
+    background-color: yellow;
+}
+.container3 .image{
+    background-image: url("./summer.jpg");
+    width :100%;
+    height:100%;
+    background-size: cover;
+    object-fit: contain;
+    
+}
+                    /* ----------------------------------------- last section 1 ----------------------------------------- */
+.last-section1{
+    width:98%;
+    margin:0 14px;
+    padding: 14px;
+    background-color: #f5f5f5;
+}
+.last-section1 h3{
+    color:grey;
+}
+.last-section1 p{
+    font-size: 13.2px;
+    line-height: 1.4;
+    word-spacing: 1px;
+    color: #262525de;
+}
+.last-section1 span{
+    font-size: 14px;
+    color: #7c7575;
+}
+
+                    /* ----------------------------------------- last section 2 ----------------------------------------- */
+
+.last-section2{
+    width:98%;
+    margin:0 14px;
+    padding: 14px;
+}
+.last-section2 h3, .last-section2 h3{
+    color:grey;
+}
+.last-section2 p{
+    font-size: 13.2px;
+    line-height: 1.4;
+    word-spacing: 1px;
+    color: grey;
+}
+.last-section2 span{
+    font-size: 14px;
+    color: #7c7575;
+}
+
+                    /* ----------------------------------------- footer section  ----------------------------------------- */
+footer{
+    width:100%;
+    height:max-content;
+    background-color: #212121;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    padding: 0 30px;
+    color:#fff;
+}
+.about, .group, .help, .policy, .mail{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+
+/* --------------------- footer section 1 --------------------*/
+.footer-headings{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr 1.5fr;
+    background-color: #212121;
+    color:grey;
+}
+.footer-headings p{
+    margin-top:16%;
+}
+
+/* --------------------- footer section 2 --------------------*/
+.footer-links{
+    padding-top:14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr 1.5fr;
+    background-color: #212121;
+}
+.footer-links a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.about a, .group a, .help a, .policy a{
+    font-size: 16px;
+}
+.address{
+    line-height: 1.6;  
+}
+.address a{
+    color:blue;
+    word-spacing: 2px;
+}
+.mail .social{
+    color: grey;
+}
+.icons{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.icons i{
+    margin-top: 8px;
+    margin-right: 20px;
+}
+/* --------------------- footer section 3 --------------------*/
+.other-links{
+    width:100%;
+    height:max-content;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr ;
+    grid-column-gap: 70px;
+    background-color: #212121;
+}
+.link-left{
+    width:100%;
+    height:100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link-right{
+    width:100%;
+    height:100%;
+    /* background-color: orange; */
+}
+.link-right{
+    margin:0 50px;
+}
+.link-right img{
+    width:40px;
+    height:20px;
+    margin-left:5px;
+}
+.other-links a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+.other-links i{
+    color: gold;
+    font-size: 13px;
+}
